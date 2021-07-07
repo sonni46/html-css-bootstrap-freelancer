@@ -1,4 +1,3 @@
-
 header .row {
  background-color: blue;
  height: 100px;
@@ -36,9 +35,24 @@ header .row {
 
 #cont {
     background-color: coral;
-    height: 200px;
+    height: 500px;
 } 
 
+#img {
+    height: 200px;
+}
 
+#green {
+    background-color: darkgreen;
+}
+
+#footer {
+    background-color: dodgerblue;
+    height: 300px;
+}
+
+#blue-shadow {
+    background-color: midnightblue;
+}
 
 /* debug  */

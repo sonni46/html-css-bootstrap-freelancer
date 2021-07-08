@@ -117,12 +117,7 @@
     border-bottom: 1px solid black;
 }
 
-textarea:valid {
-
- }
-
 #cont {
-    /* background-color: coral; */
     height:800px;
 } 
 
@@ -130,13 +125,14 @@ textarea:valid {
     height: 200px;
 }
 
-.green {
-    /* background-color: rgb(39, 184, 46); */
+#footer {
+    background-color: rgb(26, 80, 134);
+    height: 300px;
 }
 
-#footer {
-    background-color: dodgerblue;
-    height: 300px;
+#footer-end {
+    height: 200px;
+    background-color: rgb(15, 46, 77);
 }
 
 #blue-shadow {

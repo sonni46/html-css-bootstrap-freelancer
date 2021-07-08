@@ -41,9 +41,15 @@ header {
     border: 1px solid black;
 }
 
+.box_portfolio {
+    height: 300px;
+    width: 100%;
+    background-color: brown;
+}
+
 #cont {
     background-color: coral;
-    height: 500px;
+    height:800px;
 } 
 
 #img {

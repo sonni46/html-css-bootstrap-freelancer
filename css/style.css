@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Helvetica Neue', sans-serif; 
-} */
+}
 
 .header {
  background-color: blue;
@@ -24,8 +24,8 @@
     padding-top: 5%;
 }
 
-.star::before,
-.star::after {
+.star-white::before,
+.star-white::after {
     content: "";
     display: inline-block;
     width: 100px;
@@ -34,10 +34,27 @@
     border-radius: 20px;
 }
 
-.star i {
+.star-black::before,
+.star-black::after {
+    content: "";
+    display: inline-block;
+    width: 90px;
+    height: 5px;
+    background-color:rgb(40, 72, 141);
+    border-radius: 20px;
+}
+
+.star-white i {
     margin:20px;
     color: white;
     font-size: 20px;
+    vertical-align: middle;
+}
+
+.star-black i {
+    margin:20px;
+    color: rgb(40, 72, 141);
+    font-size: 30px;
     vertical-align: middle;
 }
 
@@ -47,40 +64,65 @@
 }
 
 #header {
-    background-color: cadetblue;
+    background-color: rgb(2, 122, 8);
     height: 600px;
 }
 
-.col-6 {
-    background-color:blueviolet;
+.box_portfolio {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
-.col-1,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6,
-.col-7,
-.col-8,
-.col-9,
-.col-10,
-.col-11,
-.col-12 {
-    border: 1px solid black;
+.box_portfolio:hover .overlay {
+    display: block;
 }
 
- .box_portfolio {
-    height: 300px;
+.overlay {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    top:0;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.fa-plus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 100px;
+    transform: translate(-50%, -50%);
+}
+
+.box_portfolio img {
     width: 100%;
     border-radius: 50px;
-    background-color: brown;
 }
 
-/* debug */
+.about {
+    height: 400px;
+    background-color:rgb(2, 122, 8) ;
+    text-align: center;
+}
+
+.send {
+    margin-bottom: 150px;
+}
+
+.bord {
+    border-bottom: 1px solid black;
+}
+
+textarea:valid {
+
+ }
 
 #cont {
-    background-color: coral;
+    /* background-color: coral; */
     height:800px;
 } 
 
@@ -88,8 +130,8 @@
     height: 200px;
 }
 
-#green {
-    background-color: darkgreen;
+.green {
+    /* background-color: rgb(39, 184, 46); */
 }
 
 #footer {
@@ -98,7 +140,9 @@
 }
 
 #blue-shadow {
-    background-color: midnightblue;
+    background-color: rgb(40, 72, 141);
 } 
 
-/* debug  */   
+.navbar-toggler {
+    background-color: white !important;
+}
